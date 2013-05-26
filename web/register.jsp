@@ -376,7 +376,7 @@
             <s:fielderror theme="bootstrap"/>
 
 
-            <s:form action="index" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="margin-left:350px" >
+            <s:form action="register" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="margin-left:350px" >
                 <s:textfield
                         label="Username"
                         name="username"
@@ -406,11 +406,7 @@
                         placeholder="Enter your fullname"
                         tooltip="Enter your Name here"/>
                 
-                <s:file
-                        tooltip="Upload Your Picture"
-                        label="Picture"
-                        name="picture"/>
-                
+               
                 <s:textfield
                         label="Email"
                         name="email"
@@ -422,7 +418,11 @@
                         placeholder="For students only"
                         tooltip="Enter your Name here"/>
 
-               
+               <s:textfield
+                        label="Phone"
+                        name="phone"
+                        
+                        tooltip="Enter your Name here"/>
                
                
                 

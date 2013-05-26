@@ -290,7 +290,7 @@
               <ul class="nav">
                 <li class="active"><a href="http://twitter.github.io/bootstrap/examples/carousel.html#">Home</a></li>
                 
-                <li><a href="http://twitter.github.io/bootstrap/examples/carousel.html#contact">Register</a></li>
+                <li ><a href="register.jsp">Register</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
                   <a href="http://twitter.github.io/bootstrap/examples/carousel.html#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>

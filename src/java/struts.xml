@@ -6,5 +6,9 @@
     <include file="example.xml"/>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        
+        <action name="register" class="com.cms.action.RegisterAction" method="doRegister">
+            <result name="success" >/index.jsp</result>
+        </action>
     </package>
 </struts>
