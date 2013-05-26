@@ -376,12 +376,12 @@
             <s:fielderror theme="bootstrap"/>
 
 
-            <s:form action="register" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="margin-left:350px" >
+            <s:form action="register" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="margin-left:400px" >
                 <s:textfield
                         label="Username"
                         name="username"
                         placeholder="Enter the College Id"
-                        tooltip="Enter your Name here"/>
+                        />
 
                 <s:password
                         label="Password"
