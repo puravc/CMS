@@ -368,116 +368,65 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="page-header" >
-        <h1>Register here as a User</h1>
+        <h1 style="color: black;text-align: center ">Register as a User</h1>
     </div>
-    <div id="register">
+    <div id="register" >
      <s:actionerror theme="bootstrap"/>
             <s:actionmessage theme="bootstrap"/>
             <s:fielderror theme="bootstrap"/>
 
 
-            <s:form action="index" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="
-                    margin-left:350px"
-                   >
+            <s:form action="index" enctype="multipart/form-data" theme="bootstrap" cssClass="form-horizontal " style="margin-left:350px" >
                 <s:textfield
-                        label="Name"
-                        name="name"
+                        label="Username"
+                        name="username"
+                        placeholder="Enter the College Id"
                         tooltip="Enter your Name here"/>
 
-                <s:textfield
-                        label="Textfield with Error"
-                        name="error"/>
-
-                <s:textarea
-                        tooltip="Enter your Biography"
-                        label="Biography"
-                        name="bio"
-                        cols="20"
-                        rows="3"/>
+                <s:password
+                        label="Password"
+                        
+                        name="password"/>
+                <s:password
+                        label="Re-enter Password"
+                        
+                        name="rpassword"/>
 
                 <s:select
                         tooltip="Choose Your Favourite Color"
-                        label="Favorite Color"
-                        list="{'Red', 'Blue', 'Green'}"
-                        name="favouriteColor"
-                        emptyOption="true"
-                        headerKey="None"
-                        headerValue="None"/>
-
-                <s:checkboxlist
-                        tooltip="Choose your Friends"
-                        label="Friends"
-                        list="{'Wes', 'Patrick', 'Jason', 'Jay', 'Toby', 'Rene'}"
-                        name="friends"/>
-
-                <s:checkboxlist
-                        tooltip="Checkboxes with inline position"
-                        labelposition="inline"
-                        label="Friends Inline"
-                        list="{'Wes', 'Patrick', 'Jason', 'Jay', 'Toby', 'Rene'}"
-                        name="friendsInline"/>
-
-                <s:radio
-                        tooltip="Choose your Best Friend"
-                        label="Best Friend"
-                        list="{'Wes', 'Patrick', 'Jason', 'Jay', 'Toby', 'Rene'}"
-                        name="bestFriend"
-                        cssErrorClass="foo"/>
-
-                <s:radio
-                        tooltip="Radio Buttons with inline position"
-                        label="Best Friend Inline"
-                        labelposition="inline"
-                        list="{'Wes', 'Patrick', 'Jason', 'Jay', 'Toby', 'Rene'}"
-                        name="bestFriend"
-                        cssErrorClass="foo"/>
-
-                <s:checkbox
-                        tooltip="Confirmed that your are Over 18"
-                        label="Age 18+"
-                        name="legalAge"/>
-
-                <s:doubleselect
-                        tooltip="Choose Your State"
-                        label="State"
-                        name="region" list="{'North', 'South'}"
-                        value="'South'"
-                        doubleValue="'Florida'"
-                        doubleList="top == 'North' ? {'Oregon', 'Washington'} : {'Texas', 'Florida'}"
-                        doubleName="state"
-                        headerKey="-1"
-                        headerValue="---------- Please Select ----------"
-                        emptyOption="true"/>
-
+                        label="Register as a"
+                        list="{'Student', 'Faculty', 'Canteen Member', 'Other '}"
+                        name="type"
+                        headerKey="Student"
+                        headerValue="Student"/>
+                
+                <s:textfield
+                        label="Name"
+                        name="name"
+                        placeholder="Enter your fullname"
+                        tooltip="Enter your Name here"/>
+                
                 <s:file
                         tooltip="Upload Your Picture"
                         label="Picture"
                         name="picture"/>
+                
+                <s:textfield
+                        label="Email"
+                        name="email"
+                        tooltip="Enter your Name here"/>
+                
+                <s:textfield
+                        label="Programme"
+                        name="programme"
+                        placeholder="For students only"
+                        tooltip="Enter your Name here"/>
 
-                <s:optiontransferselect
-                        tooltip="Select Your Favourite Cartoon Characters"
-                        label="Favourite Cartoons Characters"
-                        name="leftSideCartoonCharacters"
-                        leftTitle="Left Title"
-                        rightTitle="Right Title"
-                        list="{'Popeye', 'He-Man', 'Spiderman'}"
-                        multiple="true"
-                        headerKey="headerKey"
-                        headerValue="--- Please Select ---"
-                        emptyOption="true"
-                        doubleList="{'Superman', 'Mickey Mouse', 'Donald Duck'}"
-                        doubleName="rightSideCartoonCharacters"
-                        doubleHeaderKey="doubleHeaderKey"
-                        doubleHeaderValue="--- Please Select ---"
-                        doubleEmptyOption="true"
-                        doubleMultiple="true"/>
-
-                <s:textarea
-                        label="Your Thougths"
-                        name="thoughts"
-                        tooltip="Enter your thoughts here"/>
-
-                <s:submit cssClass="btn" style="margin-left:230px"/>
+               
+               
+               
+                
+                <s:submit cssClass="btn-primary" style="margin-left:230px"/>
             </s:form>
     </div> 
       <!-- Three columns of text below the carousel -->
