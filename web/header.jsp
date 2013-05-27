@@ -290,7 +290,7 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="index.jsp">Home</a></li>
+                <li><a href="index.jsp">Home</a></li>
                 
                 <li ><a href="register.jsp">Register</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
