@@ -10,5 +10,10 @@
         <action name="register" class="com.cms.action.RegisterAction" method="doRegister">
             <result name="success" >/index.jsp</result>
         </action>
+        <action name="login" class="com.cms.action.LoginAction" method="doLogin">
+            <result name="success" >/index.jsp</result>
+            <result name="unsuccess">/register.jsp</result>
+        </action>
+        
     </package>
 </struts>
