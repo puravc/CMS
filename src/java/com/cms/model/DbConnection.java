@@ -18,6 +18,7 @@ import java.util.logging.Logger;
  */
 public class DbConnection {
     Connection connect;
+    ResultSet rs;
     public void dbCon(){
         try{
          Class.forName("com.mysql.jdbc.Driver");
