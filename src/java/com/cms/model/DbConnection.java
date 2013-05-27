@@ -38,25 +38,17 @@ public class DbConnection {
             Logger.getLogger(DbConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    public boolean checklogin(String user,String password,String type){
-        String q="select userName,userPassword,userType from user where userName='"+user+"'and userPassword='"+password+"'and userType='"+type+"'";
+    public ResultSet select(String q)
+    {
+        dbCon();
+        ResultSet rs=null;
         try {
-            dbCon();
+            
             Statement st=connect.createStatement();
             rs=st.executeQuery(q);
-            if(rs.next())
-                return true;
-            else
-                return false;
-            
-            
         } catch (SQLException ex) {
             Logger.getLogger(DbConnection.class.getName()).log(Level.SEVERE, null, ex);
-            return false;
         }
-        
-        
-        
+        return rs;
     }
 }
